@@ -30,8 +30,6 @@ pipeline {
       }
     }
 
-    
-
     stage("Docker Build") {
       steps {
         sh "docker build -t $DOCKER_USER/java-app:latest java-app/"
